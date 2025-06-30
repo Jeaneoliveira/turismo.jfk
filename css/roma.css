@@ -1,0 +1,235 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Cabeçalho */
+.cabecalho {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.cabecalho-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho-titulo {
+  font-size: 1.8rem;
+}
+
+.cabecalho-navegacao {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.cabecalho-navegacao a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.cabecalho-navegacao a:hover {
+  color: #f0c040;
+}
+
+.menu-mobile {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* Principal */
+.principal {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.detalhes-pacote {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.detalhes-galeria img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detalhes-conteudo {
+  flex: 1;
+  min-width: 300px;
+}
+
+.avaliacao {
+  margin: 1rem 0;
+}
+
+.estrelas i {
+  color: #f0c040;
+}
+
+.numero-avaliacoes {
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+.destaques {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.destaque-item {
+  background: #eee;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.descricao h2 {
+  margin-top: 1rem;
+  color: #444;
+}
+
+.descricao ul {
+  margin: 0.5rem 0 1rem 1.5rem;
+  list-style: disc;
+}
+
+.preco-reserva {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-top: 2rem;
+}
+
+.valor {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #007b5e;
+}
+
+.opcoes-pagamento,
+.opcoes-parcelas {
+  margin: 1rem 0;
+}
+
+select {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.botao-reserva {
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s;
+}
+
+.botao-reserva:hover {
+  background-color: #005f47;
+}
+
+/* Seção não incluso */
+.nao-incluso {
+  margin-top: 3rem;
+}
+
+.nao-incluso h2 {
+  margin-bottom: 1rem;
+}
+
+.nao-incluso ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.nao-incluso li {
+  margin: 0.5rem 0;
+  color: #a00;
+}
+
+/* Rodapé */
+.rodape {
+  background-color: #222;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 4rem;
+}
+
+.rodape-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.rodape-secao h3 {
+  margin-bottom: 0.5rem;
+}
+
+.rodape-secao a {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.rodape-secao a:hover {
+  color: #f0c040;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .detalhes-pacote {
+    flex-direction: column;
+  }
+
+  .cabecalho-navegacao {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 1rem;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    z-index: 999;
+  }
+
+  .cabecalho-navegacao.ativo {
+    display: flex;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+}
