@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JFK Pacotes Turísticos</title>
+    <link rel="stylesheet" href="css/estilo.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="cabecalho cabecalho-com-imagem">
+      <div class="cabecalho-container">
+        <h1 class="cabecalho-titulo">JFK Turismo</h1>
+        <nav class="cabecalho-navegacao">
+          <a href="#inicio">Início</a>
+          <a href="#pacotes">Pacotes</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <button class="menu-mobile"><i class="fas fa-bars"></i></button>
+      </div>
+    </header>
+
+    <section class="banner" id="inicio">
+      <div class="carrossel">
+        <div class="slide active">
+          <img
+            src="https://images.unsplash.com/photo-1506929562872-bb421503ef21"
+            alt="Viagens incríveis"
+          />
+          <div class="slide-texto">
+            <h2>Descubra o Mundo</h2>
+            <p>Pacotes exclusivos para os melhores destinos</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325"
+            alt="Praias paradisíacas"
+          />
+          <div class="slide-texto">
+            <h2>Paraísos Tropicais</h2>
+            <p>As melhores praias do mundo esperam por você</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e"
+            alt="Aurora boreal"
+          />
+          <div class="slide-texto">
+            <h2>Aventuras Únicas</h2>
+            <p>Experiências que você nunca vai esquecer</p>
+          </div>
+        </div>
+        <button class="banner-botao anterior" onclick="mudarSlide(-1)">
+          &#9664;
+        </button>
+        <button class="banner-botao proximo" onclick="mudarSlide(1)">
+          &#9654;
+        </button>
+        <div class="indicadores">
+          <span class="indicador active" onclick="irParaSlide(0)"></span>
+          <span class="indicador" onclick="irParaSlide(1)"></span>
+          <span class="indicador" onclick="irParaSlide(2)"></span>
+        </div>
+      </div>
+    </section>
+
+    <main class="principal">
+      <section class="pacotes" id="pacotes">
+        <h2 class="pacotes-titulo">
+          Veja todos os nossos pacotes disponíveis:
+        </h2>
+        <div class="pacotes-lista">
+          <!-- PRIMEIRA LINHA DE PACOTES (6 imagens) -->
+          <div class="pacotes-linha">
+            <div class="pacote-item">
+              <img
+                src="imagens/londres.jpg"
+                alt="Londres"
+                class="pacote-imagem"
+              />
+              <div class="pacote-info">
+                <h3>Londres Imperial</h3>
+                <p>7 noites com café da manhã</p>
+                <a href="detalhes.html?destino=londres" class="pacote-botao"
+                  >Detalhes</a
+                >
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img
+                src="imagens/veneza.jpg"
+                alt="Veneza"
+                class="pacote-imagem"
+              />
+
+              <div class="pacote-info">
+                <h3>Veneza Romântica</h3>
+                <p>5 noites com passeio de gôndola</p>
+                <a href="detalhes-veneza.html" class="pacote-botao">Detalhes</a>
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img src="imagens/roma.jpg" alt="Roma" class="pacote-imagem" />
+              <div class="pacote-info">
+                <h3>Roma Clássica</h3>
+                <p>6 noites com ingressos para o Coliseu</p>
+                <a href="detalhes-roma.html" class="pacote-botao">Detalhes</a>
+               >
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img src="imagens/paris.jpg" alt="Paris" class="pacote-imagem" />
+              <div class="pacote-info">
+                <h3>Paris Iluminada</h3>
+                <p>5 noites com visita à Torre Eiffel</p>
+                <a href="detalhes-paris.html" class="pacote-botao">Detalhes</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="pacotes-linha">
+            <div class="pacote-item">
+              <img
+                src="https://images.unsplash.com/photo-1464037866556-6812c9d1c72e"
+                alt="Aurora boreal"
+                class="pacote-imagem"
+              />
+              <div class="pacote-info">
+                <h3>Aurora Boreal</h3>
+                <p>4 noites na Noruega</p>
+                <button class="pacote-botao">Detalhes</button>
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img
+                src="https://images.unsplash.com/photo-1533106497176-45ae19e68ba2"
+                alt="Ilhas gregas"
+                class="pacote-imagem"
+              />
+              <div class="pacote-info">
+                <h3>Ilhas Gregas</h3>
+                <p>7 noites em Mykonos e Santorini</p>
+                <button class="pacote-botao">Detalhes</button>
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img
+                src="https://images.unsplash.com/photo-1518391846015-55a9cc003b25"
+                alt="Nova York"
+                class="pacote-imagem"
+              />
+              <div class="pacote-info">
+                <h3>Nova York</h3>
+                <p>5 noites na cidade que nunca dorme</p>
+                <button class="pacote-botao">Detalhes</button>
+              </div>
+            </div>
+            <div class="pacote-item">
+              <img
+                src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4"
+                alt="Tóquio"
+                class="pacote-imagem"
+              />
+              <div class="pacote-info">
+                <h3>Tóquio Moderna</h3>
+                <p>8 noites com passeio cultural</p>
+                <button class="pacote-botao">Detalhes</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal para detalhes do pacote -->
+      <div id="pacoteModal" class="modal">
+        <div class="modal-conteudo">
+          <span class="fechar-modal">&times;</span>
+          <div class="modal-imagens">
+            <img
+              id="modalImagemPrincipal"
+              src=""
+              alt="Imagem principal do pacote"
+            />
+            <div class="modal-miniaturas">
+              <!-- Miniaturas serão adicionadas via JavaScript -->
+            </div>
+          </div>
+          <div class="modal-info">
+            <h2 id="modalTitulo">Título do Pacote</h2>
+            <p id="modalDescricao">Descrição detalhada do pacote turístico.</p>
+            <div class="modal-detalhes">
+              <p>
+                <i class="fas fa-calendar-alt"></i>
+                <span id="modalDuracao">7 noites</span>
+              </p>
+              <p>
+                <i class="fas fa-hotel"></i>
+                <span id="modalHospedagem">Hotel 4 estrelas</span>
+              </p>
+              <p>
+                <i class="fas fa-utensils"></i>
+                <span id="modalRefeicoes">Café da manhã incluído</span>
+              </p>
+              <p>
+                <i class="fas fa-plane"></i>
+                <span id="modalVoo">Voo internacional incluso</span>
+              </p>
+            </div>
+            <div class="modal-preco">
+              <p>A partir de</p>
+              <h3 id="modalValor">R$ 5.999,00</h3>
+              <p>em até 10x sem juros</p>
+            </div>
+            <button class="modal-botao">Reservar Agora</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="rodape">
+      <div class="rodape-container">
+        <div class="rodape-secao">
+          <h3>JFK Turismo</h3>
+          <p>Transformando sonhos em experiências inesquecíveis desde 2005.</p>
+        </div>
+        <div class="rodape-secao">
+          <h3>Links Úteis</h3>
+          <a href="#">Termos de uso</a>
+          <a href="#">Política de privacidade</a>
+          <a href="#">Dúvidas frequentes</a>
+        </div>
+        <div class="rodape-secao">
+          <h3>Contato</h3>
+          <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+          <p><i class="fas fa-envelope"></i> contato@jfkturismo.com.br</p>
+          <p><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+        </div>
+      </div>
+      <div class="rodape-copyright">
+        <p>&copy; 2025 JFK Turismo. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+    <a href="londres.html" class="btn-detalhes">Detalhes</a>
+  </body>
+</html>

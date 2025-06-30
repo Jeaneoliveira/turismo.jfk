@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Informações de Pagamento</title>
+    <link rel="stylesheet" href="css/pagamento.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Informações de Pagamento</h1>
+
+      <form action="finalizado.html" method="post">
+        <input type="text" placeholder="Nome no cartão" required />
+        <input
+          type="text"
+          placeholder="Número do cartão"
+          maxlength="19"
+          required
+        />
+        <input type="month" placeholder="Validade" required />
+        <button type="submit">Finalizar Compra</button>
+      </form>
+    </div>
+  </body>
+</html>
